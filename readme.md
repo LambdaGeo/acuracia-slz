@@ -82,3 +82,9 @@ jupyter nbconvert --to notebook --execute --inplace 2_acuracia_sa23z.ipynb
 ## How to cite
 
 If you use this code or data, please cite the article (DOI: [10.33360/geonordeste.v36i.21680](https://doi.org/10.33360/geonordeste.v36i.21680)). Citation metadata for the software is available in [`CITATION.cff`](CITATION.cff).
+
+## License
+
+The source code in this repository is released under the [MIT License](LICENSE).
+
+The data in `dados/` are derived from [MapBiomas](https://brasil.mapbiomas.org/) accuracy samples and remain subject to MapBiomas' own terms of use (CC BY 4.0); please cite MapBiomas when reusing them.
