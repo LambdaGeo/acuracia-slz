@@ -1,0 +1,49 @@
+{
+  "upload_type": "software",
+  "title": "acuracia-slz: Accuracy assessment of MapBiomas land use and land cover classification in the São Luís intermediate region",
+  "description": "Source code and data used in the article \"Avaliação da Acurácia na Classificação de Uso e Cobertura da Terra: Um Estudo de Caso na Região Intermediária de São Luís com o MapBiomas\" (Geonordeste, v. 36). Localized accuracy assessment of MapBiomas Collection 8 (2022) for chart SA-23-Z, adapted from the MapBiomas Collection 8 accuracy code.",
+  "creators": [
+    {
+      "name": "Rocha, Thomas Victor de Sousa Malheiros",
+      "affiliation": "Universidade Federal do Maranhão (UFMA)",
+      "orcid": "0009-0000-2623-7944"
+    },
+    {
+      "name": "Costa, Sérgio Souza",
+      "affiliation": "Universidade Federal do Maranhão (UFMA)",
+      "orcid": "0000-0002-0232-4549"
+    },
+    {
+      "name": "Correia, Luís Fernando Cirqueira da Silva",
+      "affiliation": "Universidade Federal do Maranhão (UFMA)",
+      "orcid": "0009-0004-4350-1478"
+    },
+    {
+      "name": "Bezerra, Denilson da Silva",
+      "affiliation": "Universidade Federal do Maranhão (UFMA)",
+      "orcid": "0000-0002-9567-7828"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "MapBiomas",
+    "accuracy assessment",
+    "land use and land cover",
+    "São Luís",
+    "Maranhão"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.33360/geonordeste.v36i.21680",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/mapbiomas-brazil/accuraccy/tree/mapbiomas80",
+      "relation": "isDerivedFrom",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}
