@@ -5,16 +5,20 @@ type: software
 authors:
   - family-names: Rocha
     given-names: Thomas Victor de Sousa Malheiros
+    orcid: "https://orcid.org/0009-0000-2623-7944"
     affiliation: Universidade Federal do Maranhão (UFMA)
   - family-names: Costa
     given-names: Sérgio Souza
+    orcid: "https://orcid.org/0000-0002-0232-4549"
     affiliation: Universidade Federal do Maranhão (UFMA)
     email: sergio.costa@ufma.br
   - family-names: Correia
     given-names: Luís Fernando Cirqueira da Silva
-    affiliation: Universidade Federal do Tocantins (UFT)
+    orcid: "https://orcid.org/0009-0004-4350-1478"
+    affiliation: Universidade Federal do Maranhão (UFMA)
   - family-names: Bezerra
     given-names: Denilson da Silva
+    orcid: "https://orcid.org/0000-0002-9567-7828"
     affiliation: Universidade Federal do Maranhão (UFMA)
 repository-code: "https://github.com/LambdaGeo/acuracia-slz"
 keywords:
@@ -29,12 +33,17 @@ preferred-citation:
   authors:
     - family-names: Rocha
       given-names: Thomas Victor de Sousa Malheiros
+      orcid: "https://orcid.org/0009-0000-2623-7944"
     - family-names: Costa
       given-names: Sérgio Souza
+      orcid: "https://orcid.org/0000-0002-0232-4549"
     - family-names: Correia
       given-names: Luís Fernando Cirqueira da Silva
+      orcid: "https://orcid.org/0009-0004-4350-1478"
     - family-names: Bezerra
       given-names: Denilson da Silva
+      orcid: "https://orcid.org/0000-0002-9567-7828"
   journal: "Geonordeste"
   volume: 36
   doi: "10.33360/geonordeste.v36i.21680"
+  url: "https://periodicos.ufs.br/geonordeste/article/view/21680"
