@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite the article below."
 title: "acuracia-slz: Accuracy assessment of MapBiomas land use and land cover classification in the São Luís intermediate region"
 type: software
+license: MIT
 authors:
   - family-names: Rocha
     given-names: Thomas Victor de Sousa Malheiros
