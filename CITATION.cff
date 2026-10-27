@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below."
+title: "acuracia-slz: Accuracy assessment of MapBiomas land use and land cover classification in the São Luís intermediate region"
+type: software
+authors:
+  - family-names: Rocha
+    given-names: Thomas Victor de Sousa Malheiros
+    affiliation: Universidade Federal do Maranhão (UFMA)
+  - family-names: Costa
+    given-names: Sérgio Souza
+    affiliation: Universidade Federal do Maranhão (UFMA)
+    email: sergio.costa@ufma.br
+  - family-names: Correia
+    given-names: Luís Fernando Cirqueira da Silva
+    affiliation: Universidade Federal do Tocantins (UFT)
+  - family-names: Bezerra
+    given-names: Denilson da Silva
+    affiliation: Universidade Federal do Maranhão (UFMA)
+repository-code: "https://github.com/LambdaGeo/acuracia-slz"
+keywords:
+  - MapBiomas
+  - accuracy assessment
+  - land use and land cover
+  - São Luís
+  - Maranhão
+preferred-citation:
+  type: article
+  title: "Avaliação da Acurácia na Classificação de Uso e Cobertura da Terra: Um Estudo de Caso na Região Intermediária de São Luís com o MapBiomas"
+  authors:
+    - family-names: Rocha
+      given-names: Thomas Victor de Sousa Malheiros
+    - family-names: Costa
+      given-names: Sérgio Souza
+    - family-names: Correia
+      given-names: Luís Fernando Cirqueira da Silva
+    - family-names: Bezerra
+      given-names: Denilson da Silva
+  journal: "Geonordeste"
+  volume: 36
+  doi: "10.33360/geonordeste.v36i.21680"

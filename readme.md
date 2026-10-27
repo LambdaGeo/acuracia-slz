@@ -29,25 +29,56 @@ The study provides a localized accuracy assessment of [MapBiomas](https://brasil
     * Assistant Professor at the Federal University of Maranhão (UFMA)
     * *denilson.bezerra@ufma.br*
 
+## Repository structure
+
+| Path | Description |
+|------|-------------|
+| `1_export_gee_input.js` | Google Earth Engine script that exports the accuracy sample points (already exported to `dados/`; not needed to reproduce the analysis). |
+| `2_acuracia_sa23z.ipynb` | **Main analysis** — accuracy assessment for chart SA-23-Z (São Luís intermediate region). Produces the results reported in the article. |
+| `dados/` | Input data: MapBiomas Collection 8 accuracy samples (2022), strata and class configuration. |
+| `exploratorio/check_acuracia_brasil.ipynb` | Exploratory check for the whole of Brazil. **Not part of the article's results**; see the note at the top of the notebook. |
+| `tmp/` | Intermediate outputs (HTML tables, shapefiles). Created automatically and ignored by git. |
+
 ## Getting Started
 
-Follow the steps below to reproduce the analysis:
+The analysis was verified to reproduce with **Python 3.12** (see `.python-version`). The pinned dependencies do not install on Python 3.13.
 
 ### 1. Clone the repository
+
 ```bash
-git clone [https://github.com/LambdaGeo/acuracia_slz.git](https://github.com/LambdaGeo/acuracia_slz.git)
-cd acuracia_slz
+git clone https://github.com/LambdaGeo/acuracia-slz.git
+cd acuracia-slz
+```
 
-2. Create a virtual environment
+### 2. Create a virtual environment
+
 It is highly recommended to use a virtual environment to isolate project dependencies.
-python -m venv venv
+
+```bash
+python3.12 -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
 
-3. Install dependencies
-The necessary libraries are listed in the requirements.txt file.
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-4. Run the Notebook
-The main analysis is performed within a Jupyter Notebook. Ensure your virtual environment is active and launch Jupyter:
+### 4. Run the notebook
+
+The main analysis is performed in a Jupyter Notebook. With the virtual environment active:
+
+```bash
 jupyter notebook 2_acuracia_sa23z.ipynb
+```
 
+To run it non-interactively from top to bottom:
+
+```bash
+jupyter nbconvert --to notebook --execute --inplace 2_acuracia_sa23z.ipynb
+```
+
+## How to cite
+
+If you use this code or data, please cite the article (DOI: [10.33360/geonordeste.v36i.21680](https://doi.org/10.33360/geonordeste.v36i.21680)). Citation metadata for the software is available in [`CITATION.cff`](CITATION.cff).
