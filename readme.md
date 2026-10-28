@@ -6,6 +6,7 @@ The study provides a localized accuracy assessment of [MapBiomas](https://brasil
 
 * **Original Repository:** [MapBiomas Accuracy - Collection 8](https://github.com/mapbiomas-brazil/accuraccy/tree/mapbiomas80)
 * **Full Article:** [Read it here (DOI: 10.33360/geonordeste.v36i.21680)](https://doi.org/10.33360/geonordeste.v36i.21680)
+* **English summary:** [`3_report_en.pdf`](3_report_en.pdf) — a 6-page companion report in English, generated from the analysis notebook.
 
 ## Authors
 
@@ -35,6 +36,9 @@ The study provides a localized accuracy assessment of [MapBiomas](https://brasil
 |------|-------------|
 | `1_export_gee_input.js` | Google Earth Engine script that exports the accuracy sample points (already exported to `dados/`; not needed to reproduce the analysis). |
 | `2_acuracia_sa23z.ipynb` | **Main analysis** — accuracy assessment for chart SA-23-Z (São Luís intermediate region). Produces the results reported in the article. |
+| `3_report_en.ipynb` | Companion report in English ("mini article"). Re-runs `2_acuracia_sa23z.ipynb` and presents the results as text, tables and figures. |
+| `3_report_en.pdf` | The companion report rendered as PDF. |
+| `build_report.py` | Rebuilds `3_report_en.pdf` from `3_report_en.ipynb`. |
 | `dados/` | Input data: MapBiomas Collection 8 accuracy samples (2022), strata and class configuration. |
 | `exploratorio/check_acuracia_brasil.ipynb` | Exploratory check for the whole of Brazil. **Not part of the article's results**; see the note at the top of the notebook. |
 | `tmp/` | Intermediate outputs (HTML tables, shapefiles). Created automatically and ignored by git. |
@@ -78,6 +82,18 @@ To run it non-interactively from top to bottom:
 ```bash
 jupyter nbconvert --to notebook --execute --inplace 2_acuracia_sa23z.ipynb
 ```
+
+### 5. Rebuild the English report (optional)
+
+The report is printed to PDF with headless Chromium, which needs a few extra packages:
+
+```bash
+pip install -r requirements-report.txt
+playwright install chromium
+python build_report.py
+```
+
+The report checks every value quoted in its text against the analysis and stops if they differ.
 
 ## How to cite
 
